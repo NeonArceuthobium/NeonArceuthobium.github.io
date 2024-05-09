@@ -1,0 +1,19 @@
+* {
+    outline: 2px dotted rgb(0, 0, 0);
+  }
+  
+  main {
+    background: rgb(0, 255, 208);
+    
+  /*  roughly 640pixels  */
+    width: 40em;
+    
+    /*  fixed center  */
+  /*   margin: 0 auto; */
+    margin-inline: auto;
+  }
+  
+  main img {
+    width: 100%;
+    display: block;
+  }

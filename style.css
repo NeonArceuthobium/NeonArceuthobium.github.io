@@ -11,9 +11,90 @@
     /*  fixed center  */
   /*   margin: 0 auto; */
     margin-inline: auto;
-  }
+    background: var(--plyr-audio-controls-background);
+}
+
+
+/* Primary Content */
+article {
+    /* flow content horizontally */
+    display: flex;
+/*     flex-direction: row; */
+  flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+
+}
+
+
+
+h1 {
+font-family: var(--primaryfont);
+color: var(--headercolor);
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+h2{
+    font-family: var(--primaryfont);
+    color: var(--headercolor);
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h3{
+    font-family: var(--primaryfont);
+    color: var(--plyr-color-main);
+}
+
+
+
+
+
+section{
+  margin: 50px;
+  padding: 50px;
+  max-width: 20em;
   
-  main img {
-    width: 100%;
-    display: block;
-  }
+}
+
+.image{
+    position: relative;
+    left: -50%;
+    margin: 0px;
+}
+
+
+
+
+
+p{
+  color: var(--plyr-color-main);
+  font-family: var(--secondaryfont)
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-family: var(--primaryfont);
+  padding-bottom: 50px;
+}
+footer a {
+  color: var(--plyr-color-main); /* Default link color */
+}
+
+footer a:visited {
+    color: var(--visited-links); /* Color after the link has been visited */
+}
+
+footer a:hover {
+    color: var(--hover-links); /* Color when the mouse hovers over the link */
+}
+
+/* Media Queries */
+@media (max-width: 40em) {
+    main article {
+        /* flex-direction: column; */
+    }
+}

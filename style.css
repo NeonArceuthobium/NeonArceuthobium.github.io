@@ -8,5 +8,22 @@ nav {
 nav h1{
   background: red;
   margin-right: auto;
-/*   justify-self: self-start; */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: .5em;
+  margin: .5em;
+}
+
+a{
+  transition : transform 1s,
+    background 1s,
+}
+a:hover {
+  background: coral;
+}
+a:active { 
+background: coral;
 }

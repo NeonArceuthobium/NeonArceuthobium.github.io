@@ -1,29 +1,107 @@
-nav {
-  background: rgba(0,0,0,.5);
+/* variables */
+:root {
+  --primarycolor: #78FFB6;
+  --primarycolordarker: #5BC18A;
+  --secondarycolor: #9AC3FF;
+  
+  --tertiarycolor: #FFBE82;
+  --textcolor: #313131;
+  --textcolorbrighter: #F4F4F4;
+  --backgroundcolor: seagreen;
+}
+
+body {
+  background: var(--backgroundcolor);
+}
+
+/* nav bar */
+ nav {
+  background: var(--primarycolor);
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: flex-end;
+  position: sticky;
+  top: 0px;
 }
+
 nav h1{
-  background: red;
+  color: var(--textcolor);
+  margin: 0;
+  margin-left: 10px;
   margin-right: auto;
 }
 
 nav a {
-  color: white;
+  color: var(--textcolor);
   text-decoration: none;
-  padding: .5em;
-  margin: .5em;
+  padd
+  margin: 0;
+  padding: 1em;
+}
+
+nav a img { 
+  anchor-point: center;
+  width: 2em;
+  vertical-align: middle;
+  margin-right: .5em;
 }
 
 a{
   transition : transform 1s,
     background 1s,
 }
+
 a:hover {
-  background: coral;
+  color: var(--textcolorbrighter);
+  background: var(--primarycolordarker);
 }
+
 a:active { 
 background: coral;
+}
+
+
+
+
+/* main wrapper */
+
+div  {
+  width: 300px;
+  height: auto;
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: var(--secondarycolor); 
+}
+
+/* youtube video */
+
+.videoframe {
+  width: 30rem;
+  padding: 0px;
+  display: flex;        
+  justify-content: center; 
+  align-items: center;  
+  height: 20rem;        
+}
+
+iframe {
+    width: 24rem;          
+    height: 14rem;       
+    border: none;        
+}
+
+.gennedimage {
+  width: 32rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 
+  repeat(2, 0%);
+  grid-column-gap: 17rem;
+  grid-row-gap: 2rem;
+}
+.gennedimage img {
+  max-width: 15rem;
 }

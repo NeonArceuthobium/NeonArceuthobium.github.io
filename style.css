@@ -25,6 +25,8 @@ body {
   top: 0px;
 }
 
+
+
 nav h1{
   color: var(--textcolor);
   margin: 0;
@@ -72,6 +74,12 @@ div  {
   margin-top: 30px;
   margin-bottom: 30px;
   background: var(--secondarycolor); 
+}
+
+div img {
+
+  width: 300px;
+
 }
 
 /* youtube video */

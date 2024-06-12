@@ -20,6 +20,7 @@
 
 body {
   background: var(--backgroundcolor);
+  margin: 0px;
 }
 
 /* nav bar */

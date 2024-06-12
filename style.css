@@ -1,6 +1,9 @@
 /* variables */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
 :root {
   --primarycolor: #78FFB6;
   --primarycolordarker: #5BC18A;
@@ -12,11 +15,11 @@
   --backgroundcolor: seagreen;
   
   --headerfont: "Press Start 2P", system-ui;
+  --bodyfont: "M PLUS Rounded 1c", sans-serif;
 }
 
 body {
   background: var(--backgroundcolor);
-  margin: 0px;
 }
 
 /* nav bar */
@@ -29,7 +32,11 @@ body {
   position: sticky;
   margin: 0px;
   top: 0px;
+  font-family: var(--bodyfont);
+  font-weight: 700;
 }
+
+
 
 nav h1{
   color: var(--textcolor);
@@ -93,6 +100,11 @@ div img {
 
 }
 
+div p {
+  font-family: var(--bodyfont);
+  font-weight: 700;
+}
+
 /* youtube video */
 
 .videoframe {
@@ -141,19 +153,12 @@ h2 {
 }
 
 h3{
-  
-  font-family: var(--headerfont);
-  
-  
+  font-family: var(--headerfont);  
 }
 
 h3::before{
   content: "◈";
-  font-size: 2em;
-  
-  
-  
-  
+  font-size: 2em; 
 }
 
 /* main, and crazy background? */
@@ -161,7 +166,6 @@ h3::before{
 main {
   width: 300px;
   height: 300px;
-  margin: 0px;
   background-image: repeating-radial-gradient(circle, #000, #000 1px, #fff 1px, #fff 2px);
   
 }

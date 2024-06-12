@@ -35,13 +35,11 @@ nav h1{
 nav a {
   color: var(--textcolor);
   text-decoration: none;
-  padd
   margin: 0;
   padding: 1em;
 }
 
 nav a img { 
-  anchor-point: center;
   width: 2em;
   vertical-align: middle;
   margin-right: .5em;

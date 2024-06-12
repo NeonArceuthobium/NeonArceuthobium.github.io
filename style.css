@@ -1,17 +1,22 @@
 /* variables */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
   --primarycolor: #78FFB6;
   --primarycolordarker: #5BC18A;
   --secondarycolor: #9AC3FF;
-  
-  --tertiarycolor: #FFBE82;
+  --secondarycolordarker: #257CFF;
+  --tertiarycolor: #D4A070;
   --textcolor: #313131;
   --textcolorbrighter: #F4F4F4;
   --backgroundcolor: seagreen;
+  
+  --headerfont: "Press Start 2P", system-ui;
 }
 
 body {
   background: var(--backgroundcolor);
+  margin: 0px;
 }
 
 /* nav bar */
@@ -22,10 +27,9 @@ body {
   align-items: center;
   justify-content: flex-end;
   position: sticky;
+  margin: 0px;
   top: 0px;
 }
-
-
 
 nav h1{
   color: var(--textcolor);
@@ -64,7 +68,7 @@ background: coral;
 
 
 
-/* main wrapper */
+/* main wrappers */
 
 div  {
   width: 300px;
@@ -74,6 +78,13 @@ div  {
   margin-top: 30px;
   margin-bottom: 30px;
   background: var(--secondarycolor); 
+  border-radius: 15px;
+  box-shadow: 10px 10px 30px var(--secondarycolordarker);
+}
+
+div:last-of-type {
+  
+  margin-bottom: 0px;
 }
 
 div img {
@@ -110,4 +121,64 @@ iframe {
 }
 .gennedimage img {
   max-width: 15rem;
+}
+
+/* headings */
+
+h1{
+  font-family: var(--headerfont);
+}
+
+h2 {
+  font-family: var(--headerfont);
+  color: var(--textcolorbrighter);
+  padding-left: 1em;
+  padding-top:.5em;
+  padding-bottom: .5em;
+  background: var(--tertiarycolor);
+  border: .5rem ridge;
+  box-shadow: inset 5px 5px 5px var(--textcolor);
+}
+
+h3{
+  
+  font-family: var(--headerfont);
+  
+  
+}
+
+h3::before{
+  content: "◈";
+  font-size: 2em;
+  
+  
+  
+  
+}
+
+/* main, and crazy background? */
+
+main {
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+  background-image: repeating-radial-gradient(circle, #000, #000 1px, #fff 1px, #fff 2px);
+  
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+main {
+  width: auto;
+  height: auto;
+  background-image: repeating-radial-gradient(circle, var(--textcolor), var(--primarycolor) 1px, var(--secondarycolor) 4px, var(--secondarycolor) 2px);
+  background-size: 40px 40px;
+  animation: moveBackground 60s linear infinite;
 }

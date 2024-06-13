@@ -87,7 +87,7 @@ div  {
   margin-bottom: 30px;
   background: var(--secondarycolor); 
   border-radius: 15px;
-  box-shadow: 10px 10px 30px var(--secondarycolordarker);
+  box-shadow: 10px 10px 30px var(--secondarycolordarker), 15px 15px 35px #0C2A58;
 }
 
 div:last-of-type {

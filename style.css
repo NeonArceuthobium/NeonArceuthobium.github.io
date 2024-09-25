@@ -223,6 +223,7 @@ h1:nth-child(3) {
   top: 0px;
   font-family: var(--bodyfont);
   font-weight: 700;
+  z-index: 1;
 }
 
 
@@ -269,7 +270,10 @@ background: coral;
 /* end Nav */
 
 
-
+.generalItemContainer {
+  display: flex;
+  justify-content: center;
+}
 
 
 div:last-of-type {
@@ -286,7 +290,10 @@ div p {
 
 
 
+
+
 /* Carousel */
+
 
 .carousel-container {
   width: 60em; /* Adjust the container width as needed */
@@ -348,18 +355,34 @@ div p {
   clip-path: polygon(100% 0%, 0% 0%, 15% 50%, 0% 100%, 100% 100%);
 }
 
-
-
 /* End Carousel */
 
-
-
-
-main {
-
-  display:flex;
-  justify-content: center;
+/* Image */
+.generalItemContainerImage {
+  max-width: 40em;
+  margin-top: 9em;
+  border-radius: 20px;
 }
+
+#tilt {
+  display: block;
+  background-color: grey;
+  transition: box-shadow 0.1s, transform 0.1s;
+  
+  /*
+    * Adding image to the background
+    * No relation to the hover effect.
+    */
+  background-image: url(http://unsplash.it/300/200);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#tilt:hover {
+  box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+  cursor: pointer;
+}
+
 
 /* youtube video */
 

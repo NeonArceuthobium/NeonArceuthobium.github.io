@@ -96,12 +96,13 @@ div p {
 /* Carousel */
 
 .carousel-container {
-  width: 61.2em; /* Adjust the container width as needed */
+  width: 60em; /* Adjust the container width as needed */
   height: 30em;
   overflow: hidden;
   position: relative;
   border-radius: 20px;
   box-shadow: 10px 10px 20px;
+  top: 4em;
 }
 
 .carousel-slide {
@@ -143,14 +144,14 @@ div p {
 /* Left arrow (previous) */
 .prev-btn {
   left: 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #78FFB6 transparent transparent;
   clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
 }
 
 /* Right arrow (next) */
 .next-btn {
   right: 0;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #78FFB6;
   clip-path: polygon(100% 0%, 0% 0%, 15% 50%, 0% 100%, 100% 100%);
 }
 

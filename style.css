@@ -224,9 +224,10 @@ h1:nth-child(3) {
   font-family: var(--bodyfont);
   font-weight: 700;
   height: 5em;
+  z-index: 1;
 }
 
-nav h1{
+nav div{
   color: var(--textcolor);
   margin: 0;
   margin-left: 10px;

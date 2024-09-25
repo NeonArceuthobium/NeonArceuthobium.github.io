@@ -373,6 +373,7 @@ div p {
     * Adding image to the background
     * No relation to the hover effect.
     */
+  background-image: url(https://unsplash.it/300/200);
   background-size: 100%;
   background-repeat: no-repeat;
 }

@@ -18,6 +18,8 @@ Philosophy and Psychology
 * [ChatGPT was used for advice on the rolling pattern background] (https://chatgpt.com/)
 * [Press Start 2P font] (https://fonts.google.com/specimen/Press+Start+2P?query=press)
 * [M Plus Rounded 1c font] (https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded)
+* [Glitch Effect] (https://rilling.dev)
+
 
 
 

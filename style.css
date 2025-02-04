@@ -387,17 +387,23 @@ div p {
 
 /* youtube video */
 
+.videoframeContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
 .videoframe {
-  width: 30rem;
   padding: 0px;
   display: flex;        
   justify-content: center; 
-  align-items: center;  
-  height: 20rem;        
+  align-items: center;    
 }
 
 iframe {
-    width: 24rem;          
-    height: 14rem;       
+    width: 80rem;          
+    height: 45rem;       
     border: none;        
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px;
 }

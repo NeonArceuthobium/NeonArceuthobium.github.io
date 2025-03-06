@@ -1,0 +1,79 @@
+.wrapper {
+    background: var(white);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.portfolio-container {
+    display: flex;
+    background: var(--tabcontainer-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 90%;
+  }
+  
+  .tab-menu {
+    display: flex;
+    flex-direction: column;
+    background: var(--tabcontainertwo-color);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tab {
+    background: var(--inactive-tab);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .tab:hover,
+  .tab.active {
+    background: var(--active-tab);
+  }
+  
+  .tab:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .tab:last-child {
+    border-bottom-left-radius: 10px;
+  }
+  
+  .portfolio-display {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-color);
+    padding: 1rem;
+  }
+  
+  .portfolio-item {
+    display: none;
+    text-align: center;
+  }
+  
+  .portfolio-item.active {
+    display: block;
+  }
+  
+  iframe {
+    width: 40rem;
+    height: 20rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }

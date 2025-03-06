@@ -13,14 +13,18 @@
   --textcolor: #313131;
   --textcolorbrighter: #F4F4F4;
   --backgroundcolor: #2F2F2F;
-  
+  --card-color: #78FFB6;
+  --tabcontainer-color: #78ffb6;
+  --tabcontainertwo-color: #9ac3ff;
+  --text-color-two: #f4f4f4;
+  --active-tab: #257cff;
+  --inactive-tab: rgba(255, 255, 255, 0.3);
   --headerfont: "Press Start 2P", system-ui;
   --bodyfont: "M PLUS Rounded 1c", sans-serif;
 }
 
 body {
   background: var(--backgroundcolor);
-  margin: 0px;
 }
 
 /* webtitle */
@@ -382,28 +386,4 @@ div p {
 #tilt:hover {
   box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
   cursor: pointer;
-}
-
-
-/* youtube video */
-
-.videoframeContainer{
-  display: flex;
-  justify-content: center;
-  margin-top: 5em;
-}
-
-.videoframe {
-  padding: 0px;
-  display: flex;        
-  justify-content: center; 
-  align-items: center;    
-}
-
-iframe {
-    width: 80rem;          
-    height: 45rem;       
-    border: none;        
-    border-radius: 20px;
-    box-shadow: 10px 10px 20px;
 }
